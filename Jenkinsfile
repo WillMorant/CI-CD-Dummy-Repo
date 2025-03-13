@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                bat "pytest project_test.py"
             }
         }
         stage('Deploy') {
